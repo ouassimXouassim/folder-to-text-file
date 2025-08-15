@@ -32,36 +32,7 @@ Ignore specific files/folders/extensions using glob patterns.
 Progress bar for long operations.
 
 Cross-platform support (Windows, Linux, macOS).
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-📌 Examples of Using the Tool
-1. Interactive Mode
-python folder-to-txt-pro.py
 
-
-Opens the interactive menu to Export or Import a folder.
-
-2. Export a Folder to TXT (No Compression, No Encryption)
-python folder-to-txt-pro.py export my_project output.txt
-
-3. Export with Gzip Compression
-python folder-to-txt-pro.py export my_project output.txt --compress
-
-4. Export with AES-256 Password Protection
-python folder-to-txt-pro.py export my_project output.txt --password "MySecret123"
-
-5. Export and Ignore Certain Files
-python folder-to-txt-pro.py export my_project output.txt --ignore "*.png *.log"
-
-6. Import Back to a Folder
-python folder-to-txt-pro.py import output.txt restored_folder
-
-7. Import a Password-Protected File
-python folder-to-txt-pro.py import output.txt restored_folder --password "MySecret123"
-
-
-💡 Tip: You can combine options:
-
-python folder-to-txt-pro.py export my_project output.txt --compress --password "SecurePass!" --ignore "*.tmp *.bak"
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ex
 ┌──(ouassim㉿archlinux) (global)-[~/Projects/python-project/folder to txt]
