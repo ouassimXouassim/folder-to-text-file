@@ -62,7 +62,7 @@ python folder-to-txt-pro.py import output.txt restored_folder --password "MySecr
 💡 Tip: You can combine options:
 
 python folder-to-txt-pro.py export my_project output.txt --compress --password "SecurePass!" --ignore "*.tmp *.bak"
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ex
 ┌──(ouassim㉿archlinux) (global)-[~/Projects/python-project/folder to txt]
 ├─[14:41 2025-08-15]
@@ -82,65 +82,4 @@ Enable AES-256-GCM password encryption for all files? [y/N]: N
 Ignore patterns (space-separated, glob allowed; leave empty for none): 
 Show progress bar? [Y/n]: Y
 Exported to bravexx.txt
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   📌 Usage Simulation
-📂 Target folder before export
-my_project/
-├── main.py
-├── config.json
-├── icon.png
-├── utils/
-│   ├── helper.py
-│   └── notes.txt
 
-📜 Export without compression or password
-$ python folder-to-txt-pro.py export my_project output.txt
-Exporting folder: my_project
-Compression: None
-Password: None
-Ignore patterns: None
-[##########] 100% Done!
-Export completed → output.txt
-
-📖 Viewing the output file using cat
-$ cat output.txt
-
-
-Result (shortened for display):
-
-my_project
-├── main.py
-│   print("Hello, World!")
-│   print("This is main script")
-├── config.json
-│   {
-│       "version": "1.0",
-│       "debug": true
-│   }
-├── icon.png
-│   [BINARY DATA: PNG IMAGE, 1024 bytes]
-├── utils/helper.py
-│   def greet(name):
-│       return f"Hello {name}"
-├── utils/notes.txt
-│   TODO:
-│   - Refactor greet function
-│   - Add more features
-
-📜 Export with compression and password
-$ python folder-to-txt-pro.py export my_project output.txt --compress --password "Secret123"
-Exporting folder: my_project
-Compression: gzip
-Password: [ENABLED]
-Ignore patterns: None
-[##########] 100% Done!
-Export completed → output.txt (compressed & encrypted)
-
-📖 Viewing the content after compression and encryption
-$ cat output.txt
-
-
-The result will be compressed and encrypted data, shown as unreadable symbols:
-
-H4sIAAAAAAAA/3yQwU7DMAyF9z4Fzd...
-...(binary encrypted data)...
